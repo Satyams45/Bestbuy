@@ -57,11 +57,11 @@ Follow these steps to deploy each of these containerized microservices in a Kube
 | Service          | Repository Link        |
 |------------------|------------------------|
 | Store-Front      | [store-front](https://github.com/Satyams45/store-front)       |
-| Store-Admin      | [store-admin](https://github.com/ngugi-james/store-admin-a2)       |
-| Order-Service    | [order-service](https://github.com/ngugi-james/order-service-a2)       |
-| Product-Service  | [product-service](https://github.com/ngugi-james/product-service-a2)       |
-| Makeline-Service | [makeline-service](https://github.com/ngugi-james/makeline-service-a2)       |
-| AI-Service       | [ai-service](https://github.com/ngugi-james/ai-service-a2)       |
+| Store-Admin      | [store-admin](https://github.com/Satyams45/store-admin)       |
+| Order-Service    | [order-service](https://github.com/Satyams45/order-service)       |
+| Product-Service  | [product-service](https://github.com/Satyams45/product-service)       |
+| Makeline-Service | [makeline-service](https://github.com/Satyams45/makeline-service)       |
+| AI-Service       | [ai-service](https://github.com/Satyams45/ai-service)       |
 
 ## Table of Docker Images
 

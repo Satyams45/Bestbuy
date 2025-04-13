@@ -56,7 +56,7 @@ Follow these steps to deploy each of these containerized microservices in a Kube
 
 | Service          | Repository Link        |
 |------------------|------------------------|
-| Store-Front      | [store-front](https://github.com/ngugi-james/store-front-a2)       |
+| Store-Front      | [store-front](https://github.com/Satyams45/store-front)       |
 | Store-Admin      | [store-admin](https://github.com/ngugi-james/store-admin-a2)       |
 | Order-Service    | [order-service](https://github.com/ngugi-james/order-service-a2)       |
 | Product-Service  | [product-service](https://github.com/ngugi-james/product-service-a2)       |

@@ -2,7 +2,8 @@
 
 ## Updated Application Architecture
 
-![Architecture Diagram](FinalAssignment-1.png)
+![Architecture Diagram](![image](https://github.com/user-attachments/assets/050392e8-db37-4a0f-9818-8c743e5f9047)
+)
 
 ## Application and Architecture Explanation
 

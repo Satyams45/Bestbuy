@@ -7,18 +7,35 @@
 
 ## Application and Architecture Explanation
 
-This application is a cloud-native implementation of a **Best Buy website**, consisting of multiple microservices for managing storefront interactions, orders, products, and more. Each microservice performs a specific role within the architecture:
+### Microservices
 
-- **store-front**: The customer-facing web application built with Vue.js.
-- **store-admin**: The administrative web application for managing orders and products, built with Vue.js.
-- **order-service**: Handles order placement and queuing using RabbitMQ.
-- **product-service**: Manages product CRUD operations with Rust.
-- **makeline-service**: Processes orders from the queue and marks them complete.
-- **ai-service**: Provides generative AI functionality for text and graphics.
-- **rabbitmq**: Acts as the message broker for order queues.
-- **mongodb**: Stores persistent application data.
+**Store-Front**: Customer-facing web app for browsing products and placing orders.
 
-The architecture leverages Kubernetes for container orchestration, ensuring scalability, resilience, and efficient resource utilization.
+**Store-Admin**: Internal tool for Best Buy employees to manage products and view orders.
+
+**Order-Service**: Handles order placement logic and publishes messages to Azure Service Bus.
+
+**Makeline-Service:** Subscribes to the Azure Service Bus queue and processes orders.
+
+**Product-Service:** Manages product CRUD operations and interacts with MongoDB.
+
+**AI-Service:** Uses GPT-4 to generate product descriptions and DALL-E to generate product images.
+
+### Database
+
+**MongoDB** is used as a document store to persist product and order data.
+
+### AI Integration
+
+**OpenAI GPT-4** is used for generating descriptive product text.
+
+**DALL-E** is used to create AI-generated product images.
+
+### Kubernetes Deployment
+
+Each microservice is deployed in a separate pod.
+
+ConfigMaps and Secrets manage non-sensitive and sensitive configurations.
 
 ## Deployment Instructions
 
@@ -90,10 +107,13 @@ All Kubernetes deployment YAML files are located in the `Deployment_Files` folde
 - `mongodb-deployment.yaml`
 
 ---
+## Bonus Step 
+### Continuous Integration/Continuous Deployment (CI/CD) pipeline
+![image](https://github.com/user-attachments/assets/15465647-1571-4ea5-8230-206b77a86ab0)
 
-For any questions or issues, please contact [your contact info].
+## Known Issues or Limitations
+- Insufficient quota and faced problem to deploy Dell-e
+- GPT-4 API rate-limits under high load; consider retry logic for production use
 
 # Demo Video
-Link to Demo Video https://youtu.be/TCvo9jbtJHE 
-
-https://youtu.be/TCvo9jbtJHE 
+Link to Demo Video 

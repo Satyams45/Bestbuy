@@ -88,7 +88,7 @@ Follow these steps to deploy each of these containerized microservices in a Kube
 | Store-Front      | [store-front](https://hub.docker.com/r/satyams45/store-front)   |
 | Store-Admin      | [store-admin](https://hub.docker.com/r/satyams45/store-admin)   |
 | Order-Service    | [order-service](https://hub.docker.com/r/satyams45/order-service)   |
-| Product-Service  | [product-service](https://hub.docker.com/r/satyams45/product-service))   |
+| Product-Service  | [product-service](https://hub.docker.com/r/satyams45/product-service)   |
 | Makeline-Service | [makeline-service](https://hub.docker.com/r/satyams45/makeline-service)   |
 | AI-Service       | [ai-service](https://hub.docker.com/r/satyams45/ai-service)   |
 

@@ -9,33 +9,33 @@
 
 ### Microservices
 
-**Store-Front**: Customer-facing web app for browsing products and placing orders.
+- **Store-Front**: Customer-facing web app for browsing products and placing orders.
 
-**Store-Admin**: Internal tool for Best Buy employees to manage products and view orders.
+- **Store-Admin**: Internal tool for Best Buy employees to manage products and view orders.
 
-**Order-Service**: Handles order placement logic and publishes messages to Azure Service Bus.
+- **Order-Service**: Handles order placement logic and publishes messages to Azure Service Bus.
 
-**Makeline-Service:** Subscribes to the Azure Service Bus queue and processes orders.
+- **Makeline-Service:** Subscribes to the Azure Service Bus queue and processes orders.
 
-**Product-Service:** Manages product CRUD operations and interacts with MongoDB.
+- **Product-Service:** Manages product CRUD operations and interacts with MongoDB.
 
-**AI-Service:** Uses GPT-4 to generate product descriptions and DALL-E to generate product images.
+- **AI-Service:** Uses GPT-4 to generate product descriptions and DALL-E to generate product images.
 
 ### Database
 
-**MongoDB** is used as a document store to persist product and order data.
+- **MongoDB** is used as a document store to persist product and order data.
 
 ### AI Integration
 
-**OpenAI GPT-4** is used for generating descriptive product text.
+- **OpenAI GPT-4** is used for generating descriptive product text.
 
-**DALL-E** is used to create AI-generated product images.
+- **DALL-E** is used to create AI-generated product images.
 
 ### Kubernetes Deployment
 
-Each microservice is deployed in a separate pod.
+- Each microservice is deployed in a separate pod.
 
-ConfigMaps and Secrets manage non-sensitive and sensitive configurations.
+- ConfigMaps and Secrets manage non-sensitive and sensitive configurations.
 
 ## Deployment Instructions
 

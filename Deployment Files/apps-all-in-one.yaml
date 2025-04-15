@@ -136,7 +136,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: order-service
-          image: jamesngugi/order-service-a2:latest # Custom image for order service
+          image: jamesngugi/order-service:latest # Custom image for order service
           ports:
             - containerPort: 3000 # Order service listens on this port
           env: # Environment variables for configuration
@@ -230,7 +230,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: makeline-service
-          image: jamesngugi/makeline-service-a2:latest # Custom Makeline service image
+          image: jamesngugi/makeline-service:latest # Custom Makeline service image
           ports:
             - containerPort: 3001 # Makeline service listens on this port
           env: # Environment variables for configuration
@@ -309,7 +309,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: product-service
-          image: jamesngugi/product-service-a2:latest # Custom product service image
+          image: satyam/product-service:latest # Custom product service image
           ports:
             - containerPort: 3002 # Product service listens on this port
           env: # Environment variables for configuration
@@ -370,7 +370,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: store-front
-          image: jamesngugi/store-front-a2:latest # Front-end store application
+          image: satyam/store-front:latest # Front-end store application
           ports:
             - containerPort: 8080 # Front-end app port
               name: store-front
@@ -440,7 +440,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: store-admin
-          image: jamesngugi/store-admin-a2:latest # Admin interface for store
+          image: satyam/store-admin-a2:latest # Admin interface for store
           ports:
             - containerPort: 8081 # Admin app port
               name: store-admin
@@ -510,7 +510,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: ai-service
-          image: jamesngugi/ai-service-a2:latest
+          image: satyam/ai-service-a2:latest
           ports:
             - containerPort: 5001
           env:
@@ -521,9 +521,9 @@ spec:
             - name: AZURE_OPENAI_DEPLOYMENT_NAME # required if using Azure OpenAI
               value: "gpt-4-deployment"
             - name: AZURE_OPENAI_ENDPOINT # required if using Azure OpenAI
-              value: "https://wair0-m4m2dvym-swedencentral.openai.azure.com/"
+              value: "https://satyamai.openai.azure.com/"
             - name: AZURE_OPENAI_DALLE_ENDPOINT
-              value: "https://wair0-m4m2dvym-swedencentral.openai.azure.com/"
+              value: "https://satyamai.openai.azure.com/"
             - name: AZURE_OPENAI_DALLE_DEPLOYMENT_NAME
               value: "dalle-3-deployment"
             - name: OPENAI_API_KEY # always required

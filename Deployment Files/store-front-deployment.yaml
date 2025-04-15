@@ -17,7 +17,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: store-front
-          image: jamesngugi/store-front-a2:latest # Front-end store application
+          image: satyam/store-front:latest # Front-end store application
           ports:
             - containerPort: 8080 # Front-end app port
               name: store-front

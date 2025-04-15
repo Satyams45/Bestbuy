@@ -17,7 +17,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: makeline-service
-          image: jamesngugi/makeline-service-a2:latest # Custom Makeline service image
+          image: satyam/makeline-service:latest # Custom Makeline service image
           ports:
             - containerPort: 3001 # Makeline service listens on this port
           env: # Environment variables for configuration

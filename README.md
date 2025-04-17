@@ -114,6 +114,7 @@ All Kubernetes deployment YAML files are located in the `Deployment_Files` folde
 ## Known Issues or Limitations
 - Insufficient quota and faced problem to deploy Dell-e
 - GPT-4 API rate-limits under high load; consider retry logic for production use
+- I Forgot to show you Azure Service Bus is working in my demo video.
 
 # Demo Video
 Link to Demo Video : https://www.youtube.com/watch?v=1cNkKjBNca8

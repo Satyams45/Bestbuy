@@ -2,8 +2,7 @@
 
 ## Updated Application Architecture
 
-![Architecture Diagram](https://github.com/user-attachments/assets/6d9ff987-179e-45db-9d78-63b0635777c5)
-)
+![Architecture Diagram](https://github.com/user-attachments/assets/7d40d439-895b-401a-b751-9f4a43379789)
 
 
 ## Application and Architecture Explanation
